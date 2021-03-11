@@ -1,16 +1,17 @@
 //~ import { upperCase, localeUpperCase } from "upper-case";
 const { app, BrowserWindow } = require('electron')
-var upcase = require('upper-case');
-
+const upcase = require('upper-case');
+var apc = upcase.upperCase('test');
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      contextIsolation: false
     }
   })
-    var apc = upcase.upperCase('test');
+  win.toggleDevTools();
   console.log(apc);
   win.loadFile('index.html')
 }
