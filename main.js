@@ -15,7 +15,6 @@ function createWindow () {
   })
   win.toggleDevTools();
   console.log(apc);
-  //~ Viewer.check();
   win.loadFile('index.html')
 }
 
