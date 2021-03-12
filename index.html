@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-<style>
+    <style>
         html,
         body {
             height: 100%;
@@ -43,14 +44,20 @@
             flex: 0;
         }
     </style>
+    <script src="viewer.js" />
 </head>
+
 <body style="background: white;">
     <h1>Hello World!</h1>
     <p>
-        We are using node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
-        This is a <script>document.write(window.process.argv.slice(-1))</script.
+        We are using node
+        <script>document.write(process.versions.node)</script>,
+        Chrome
+        <script>document.write(process.versions.chrome)</script>,
+        and Electron
+        <script>document.write(process.versions.electron)</script>.
+        This is A
+        <script>document.write(window.process.argv.slice(-1))</script>
     </p>
     <div class="flex-container">
         <div id="viewer-container">
@@ -64,5 +71,9 @@
     <div id="progress">
 
     </div>
+    <script>
+        loadViewer("viewer", "https://docs.xbim.net/data/SampleHouse.wexbim");
+    </script>
 </body>
+
 </html>
