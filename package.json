@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "@xbim/viewer": "^2.0.1-pre202103091921",
-    "electron-squirrel-startup": "^1.0.0",
-    "upper-case": "^2.0.2"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "config": {
     "forge": {
